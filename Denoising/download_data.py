@@ -57,8 +57,8 @@ for data in args.data.split('-'):
                 # gdown.download(id=SIDD_test, output='Datasets/test.zip', quiet=False)
                 os.system(f'gdrive download {SIDD_test} --path Datasets/')
                 print('Extracting SIDD Data...')
-                shutil.unpack_archive('Datasets/test.zip', 'Datasets')
-                os.remove('Datasets/test.zip')
+                #shutil.unpack_archive('Datasets/test.zip', 'Datasets')
+                #os.remove('Datasets/test.zip')
 
             if args.dataset == 'all' or args.dataset == 'DND':
                 print('DND Testing Data!')
